@@ -44,8 +44,4 @@ The colors used in the app are chosen to represent each country distinctively:
 - **Flutter**: UI toolkit for building natively compiled applications.
 - **Dart**: Programming language optimized for building mobile apps.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
