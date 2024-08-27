@@ -13,7 +13,7 @@ A Flutter app that displays a static list of 10 countries using `ListView`, show
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/countries-list-app.git
+   git clone https://github.com/WaleedTaj/listview_app.git
    ```
 2. **Install Dependencies**:
    ```bash
