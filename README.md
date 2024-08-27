@@ -11,8 +11,13 @@ A Flutter app that displays a static list of 10 countries using `ListView`, show
 
 ## 📸 Screenshots
 
-<img src="(https://github.com/WaleedTaj/listview_app/blob/main/Screenshot_1.png)" alt="Home Screen" width="300"/>
-<img src="(https://github.com/WaleedTaj/listview_app/blob/main/Screenshot_2.png)" alt="Home Screen" width="300"/>
+### Home Screen
+
+<img src="https://github.com/WaleedTaj/listview_app/blob/main/Screenshot_1.png" alt="Home Screen" width="500"/>
+
+### Country Details
+
+<img src="https://github.com/WaleedTaj/listview_app/blob/main/Screenshot_2.png" alt="Country Details" width="500"/>
 
 ## 🚀 Getting Started
 
