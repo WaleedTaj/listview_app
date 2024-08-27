@@ -9,6 +9,10 @@ A Flutter app that displays a static list of 10 countries using `ListView`, show
 - **Responsive UI**: Adapts to different screen sizes on both Android and iOS devices.
 - **Custom Snackbars**: Shows the capital city of a selected country with a Snackbar, providing instant feedback.
 
+## 📸 Screenshots
+
+![Home Screen](https://imgur.com/a/OpoDocJ)
+
 ## 🚀 Getting Started
 
 1. **Clone the Repository**:
