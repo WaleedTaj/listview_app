@@ -68,7 +68,7 @@ class MyListView extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
         title: FittedBox(
           child: Text(
-            "Countries with Capitals",
+            "Capitals of Countries",
             style: TextStyle(
                 color: Colors.white,
                 fontSize: height * 0.03,
