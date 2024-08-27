@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp()); // Entry point of the App
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false, // Hide the debug banner
       home: MyListView(),
     );
   }
 }
 
 class MyListView extends StatelessWidget {
+  // List of the countries to display
   final List<String> countries = [
     'Pakistan', // Dark Green
     'Saudi Arabia', // Green
@@ -28,6 +29,7 @@ class MyListView extends StatelessWidget {
     'China', // Brown
   ];
 
+  // Corresponding colors for each country
   final List<Color> colors = [
     Colors.green[600]!, // Pakistan
     Colors.greenAccent, // Saudi Arabia
@@ -41,6 +43,7 @@ class MyListView extends StatelessWidget {
     Colors.brown[300]!, // China
   ];
 
+  // Capitals of each country
   final List<String> capitals = [
     'Islamabad',
     'Riyadh',
@@ -56,6 +59,7 @@ class MyListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get the screen dimensions for responsive design
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
 
@@ -84,12 +88,12 @@ class MyListView extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.only(top: height * 0.02),
         child: ListView.builder(
-            itemCount: countries.length,
+            itemCount: countries.length, // Number of items in the ListView
             itemBuilder: (context, index) {
               return Card(
                 elevation: height * 0.01,
                 margin: EdgeInsets.all(height * 0.01),
-                color: colors[index],
+                color: colors[index], // Background colors of Card
                 child: ListTile(
                   leading: const Icon(
                     Icons.flag,
@@ -99,9 +103,10 @@ class MyListView extends StatelessWidget {
                     Icons.arrow_forward,
                     color: Colors.white,
                   ),
-                  contentPadding: EdgeInsets.all(height * 0.017),
+                  contentPadding: EdgeInsets.all(
+                      height * 0.017), // Padding inside the ListTile
                   title: Text(
-                    countries[index],
+                    countries[index], // Display the country name
                     style: TextStyle(
                       fontSize: height * 0.027,
                       color: Colors.white,
@@ -109,11 +114,11 @@ class MyListView extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                    ScaffoldMessenger.of(context)
+                        .hideCurrentSnackBar(); // Hide any currently visible SnackBar
                     final snackbar = SnackBar(
                         content: Text(
-
-                        "Capital of ${countries[index]} is ${capitals[index]}",
+                          "Capital of ${countries[index]} is ${capitals[index]}", // Content of the SnackBar
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                         backgroundColor: colors[index].withOpacity(0.9),
@@ -121,7 +126,8 @@ class MyListView extends StatelessWidget {
                             borderRadius: BorderRadius.vertical(
                           top: Radius.circular(height * 0.02),
                         )));
-                    ScaffoldMessenger.of(context).showSnackBar(snackbar);
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(snackbar); // Show the SnackBar
                   },
                 ),
               );
