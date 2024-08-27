@@ -111,8 +111,9 @@ class MyListView extends StatelessWidget {
                   onTap: () {
                     ScaffoldMessenger.of(context).hideCurrentSnackBar();
                     final snackbar = SnackBar(
-                        content: Text(
-                          "Capital of ${countries[index]} is ${capitals[index]}",
+                        content: Text(git fetch origin
+
+                        "Capital of ${countries[index]} is ${capitals[index]}",
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                         backgroundColor: colors[index].withOpacity(0.9),
